@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* this is only responsible for smooth scrolling */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.nav {
+  /* border: 2px solid black; */
+  position: fixed;
+  top: 40%;
+  right: 10px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  background: red;
+  display: flex;
+  justify-self: space-between;
+  align-self: flex-end;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7.5px;
+  transform: translate(-7.5px, -7.5px);
+
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* border: 3px solid #000; */
+}
+
+.text-container {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.text-container .text {
+  display: flex;
+  justify-content: center;
+  padding: 0 auto;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+#text1 {
+  background: lightblue;
+}
+#text2 {
+  background: rgb(129, 211, 160);
+}
+#text3 {
+  background: rgb(121, 92, 202);
+}
+#text4 {
+  background: rgb(187, 78, 197);
+}
+.circle-1 {
+  background: lightblue;
+}
+.circle-2 {
+  background: rgb(129, 211, 160);
+}
+.circle-3 {
+  background: rgb(121, 92, 202);
+}
+.circle-4 {
+  background: rgb(187, 78, 197);
+}
